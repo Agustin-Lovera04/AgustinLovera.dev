@@ -1,0 +1,12 @@
+.navbar-brand {
+  height: 4rem;
+}
+
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+}
+.navbar.scrolled {
+  background-color: rgba(146, 180, 244, 0.5);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
