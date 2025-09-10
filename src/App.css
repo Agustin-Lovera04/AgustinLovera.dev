@@ -1,3 +1,44 @@
 body{
   margin: 0;
+  --color_var_1: #0A369D;
+  --color_var_2: #4472CA;
+  --color_var_3: #5E7CE2;
+  --color_var_4: #92B4F4;
+  --color_var_5: #def2ff;
+  --color_var_6: #FFDD88;
+  --color_var_7: #ffc107;
 }
+
+body,
+:root {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+.row{
+  max-width: 100%
+}
+
+.var-h1{
+    font-size: 54px;
+    font-weight: bold;
+    color: var(--color_var_1);
+}
+
+.var-h4{
+  font-size: 32px;
+}
+
+.var-txt{
+    font-size: 20px;
+}
+

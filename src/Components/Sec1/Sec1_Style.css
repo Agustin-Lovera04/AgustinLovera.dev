@@ -1,0 +1,17 @@
+.sec1 {
+  background-image: url("../../assets/gradient.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70dvh;
+}
+
+.perfil_img {
+  max-height: 12rem;
+  border-radius: 4rem;
+}
+
+.icon-click {
+  position: absolute;
+  right: 12rem;
+  top: 24rem;
+}

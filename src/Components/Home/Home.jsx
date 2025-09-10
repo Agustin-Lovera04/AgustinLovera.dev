@@ -1,8 +1,10 @@
-import React from 'react'
+import Sec1 from "../Sec1/Sec1"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="container-fluid">
+      <Sec1/>
+    </div>
   )
 }
 
