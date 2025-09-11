@@ -1,0 +1,50 @@
+.sec3 {
+  margin-top: 5rem;
+}
+.card {
+  overflow: hidden;
+  border-radius: 2rem;
+  height: 30rem;
+  background-color: var(--color_var_5);
+}
+
+.img_card_container {
+  height: 350px;
+  max-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.PN_bg {
+  background-image: url(../../assets/gradient_PN.svg);
+}
+.BZ_bg {
+  background-image: url(../../assets/gradient_BZ.svg);
+}
+.HA_bg {
+  background-image: url(../../assets/gradient_HA.svg);
+}
+.AM_bg {
+  background-image: url(../../assets/gradient_AM.svg);
+}
+
+.card-img-top {
+  border-radius: 1rem;
+  width: 90% !important;
+  height: 70% !important;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+.img_AMORATTO {
+  height: 250px !important;
+  width: 40% !important;
+}
+
+.lng_card {
+  background-color: var(--color_var_4);
+  padding: 4px;
+  border-radius: 5px;
+}
