@@ -8,7 +8,7 @@ const Sec3 = () => {
   return (
     <div className="sec3">
       <h1 className="var-h1 offset-1">Proyectos recientes</h1>
-      <div className="d-flex flex-column justify-content-center align-items-center flex-wrap gap-4">
+      <div className="d-flex flex-column flex-md-row justify-content-center align-items-center flex-wrap gap-4">
         <div className="card col-10 col-md-4">
           <div className="img_card_container HA_bg text-center align-content-center">
             <img src={HA_img} className="card-img-top shadow" alt="sitio web" />
