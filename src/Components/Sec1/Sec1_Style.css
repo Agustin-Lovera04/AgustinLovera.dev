@@ -2,7 +2,7 @@
   background-image: url("../../assets/gradient.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70dvh;
+  height: 85dvh;
 }
 
 .perfil_img {
@@ -13,5 +13,18 @@
 .icon-click {
   position: absolute;
   right: 12rem;
-  top: 24rem;
+  top: 20rem;
+}
+
+@media (max-width:768px) {
+  
+.perfil_img {
+  max-height: 8rem;
+  margin-bottom: 2rem;
+}
+
+.icon-click {
+  right: 2.5rem;
+  top: 36rem;
+}
 }

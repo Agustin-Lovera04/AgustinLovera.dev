@@ -17,11 +17,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar navbar-expand-md navbar-dark ${
+      className={`navbar navbar-expand-md navbar-dark container-fluid justify-content-between ${
         scrolled ? "scrolled" : ""
       }`}
     >
-      <div className="container-fluid">
+
         <img src={logo} alt="logo" className="navbar-brand" />
         <button
           className="navbar-toggler d-md-none"
@@ -155,8 +155,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+  </nav>
   );
 };
 
