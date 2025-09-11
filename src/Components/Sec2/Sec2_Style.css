@@ -1,0 +1,10 @@
+.graphElementSc2{
+    width: 90%;
+    margin-top: -8rem;
+}
+
+@media (max-width:768px) {
+    .graphElementSc2{
+        margin-top: 0;
+    }
+}
