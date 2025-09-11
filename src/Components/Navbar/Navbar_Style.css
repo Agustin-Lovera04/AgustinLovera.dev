@@ -5,6 +5,7 @@
 
 .navbar {
   position: fixed;
+  z-index: 9999;
   background-color: transparent;
   backdrop-filter: blur(8px);
   max-width: 100dvw;
