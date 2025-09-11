@@ -42,3 +42,8 @@ body,
     font-size: 20px;
 }
 
+mark{
+  padding: 5px;
+  background-color: var(--color_var_6);
+  color: var(--color_var_1);
+}

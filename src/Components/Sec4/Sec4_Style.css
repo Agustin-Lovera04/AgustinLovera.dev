@@ -1,0 +1,12 @@
+.sec4{
+    margin-top: 4rem;
+}
+.graphElementSec4{
+    width: 100%;
+}
+@media (max-width: 768px) {
+ .graphElementSec4{
+    margin-top: 2rem;
+    width: 20rem;
+}   
+}
