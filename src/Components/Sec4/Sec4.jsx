@@ -7,7 +7,7 @@ const Sec4 = () => {
             <img src={graphElementSec4} alt="" className='graphElementSec4'/>
         </div>
         <div className="col-10 col-md-5">
-            <h1 className="var-h1">
+            <h1 className="var-h1 tile-Sec4">
                 Hagamos que las ideas <mark>funcionen</mark>
             </h1>
         </div>

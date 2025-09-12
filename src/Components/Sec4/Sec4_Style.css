@@ -4,9 +4,17 @@
 .graphElementSec4{
     width: 100%;
 }
+
+.tile-Sec4{
+    padding-left: 3rem;
+}
+
 @media (max-width: 768px) {
  .graphElementSec4{
     margin-top: 2rem;
     width: 20rem;
 }   
+.tile-Sec4{
+    padding-left: 0;
+}
 }
