@@ -1,8 +1,0 @@
-.timeline-box {
-  pointer-events: auto; /* permite interactuar con Chrono */
-}
-
-.timeline-box .chrono-icons, 
-.timeline-box .chrono-cards {
-  pointer-events: auto; /* elementos internos siguen clickeables */
-}
