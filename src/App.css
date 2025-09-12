@@ -47,3 +47,10 @@ mark{
   background-color: var(--color_var_6);
   color: var(--color_var_1);
 }
+
+
+.Sec7{
+  background-image: url('./assets/gradient_sc7.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

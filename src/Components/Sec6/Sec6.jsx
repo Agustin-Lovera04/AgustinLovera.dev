@@ -1,4 +1,4 @@
-import { Chrono } from "react-chrono";
+/* import { Chrono } from "react-chrono";
 const Sec6 = () => {
   const items = [
     {
@@ -60,3 +60,4 @@ const Sec6 = () => {
   );
 };
 export default Sec6;
+ */
