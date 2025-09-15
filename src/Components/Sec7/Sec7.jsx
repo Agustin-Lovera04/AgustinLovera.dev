@@ -26,11 +26,10 @@ const Sec7 = () => {
 
   return (
     <div className="Sec7 p-5">
-      <div className="row justify-content-center">
+      <div className="d-flex justify-content-center">
       {responseError && <div className="alert alert-danger">{responseError}</div>}
       {responseExit && <div className="alert alert-success">{responseExit}</div>}
       {!responseError && !responseExit && 
-        <div className="col-10 col-md-6">
           <div
             className="p-4 shadow-sm"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
@@ -82,7 +81,6 @@ const Sec7 = () => {
               </div>
             </form>
           </div>
-        </div>
     }
       </div>
     </div>

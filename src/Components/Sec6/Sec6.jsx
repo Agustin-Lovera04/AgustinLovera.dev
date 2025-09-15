@@ -1,63 +1,108 @@
-/* import { Chrono } from "react-chrono";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import Typography from "@mui/material/Typography";
+import { Box } from "@mui/material";
+
 const Sec6 = () => {
   const items = [
     {
-      title: "Feb. 2023 - Abr. 2023",
-      cardTitle: "DESARROLLO WEB - CODER HOUSE",
+      title: "Ago. 2025 - Nov 2025",
+      cardTitle:
+        "Programa de Profundización en Desarrollo de Software – Fundación Formar & Software IT",
       cardDetailedText:
-        "En este curso, aprendí a diseñar y desarrollar sitios web completos, desde el prototipo y la codificación con HTML y CSS hasta el uso de herramientas de control de versiones como GIT y pre procesadores como SASS. También me capacité en el uso de Bootstrap, la optimización SEO y el despliegue de sitios en servidores. El curso incluyó habilidades para interactuar con servicios web y gestionar la relación con clientes finales.",
-    },
-    {
-      title: "May. 2023 - Jul. 2023",
-      cardTitle: "JAVASCRIPT - CODER HOUSE",
-      cardDetailedText:
-        "En este curso, dominé los fundamentos de JavaScript para crear aplicaciones web interactivas. Aprendí a usar las herramientas esenciales del lenguaje, a integrar librerías como jQuery para simplificar tareas, y a implementar técnicas de desarrollo modernas como AJAX. Estas habilidades me permitieron crear soluciones dinámicas y me proporcionaron una base sólida para trabajar con cualquier framework de JavaScript.",
-    },
-    {
-      title: "Jul. 2023 - Sep. 2023",
-      cardTitle: "REACT JS - CODER HOUSE",
-      cardDetailedText:
-        "Aprendí a desarrollar aplicaciones web dinámicas y escalables utilizando React. Incorporé buenas prácticas de desarrollo, manejo de componentes, props y estados, consumo de APIs, enrutamiento con React Router y gestión de estados globales con Context API. Además, trabajé con Firebase para autenticación y base de datos, integrando un proyecto final de e-commerce con carrito de compras y persistencia de datos en tiempo real.",
-    },
-    {
-      title: "Oct. 2023 - Abr. 2024",
-      cardTitle: "PROGRAMACIÓN BACKEND - CODER HOUSE",
-      cardDetailedText:
-        "Formación intensiva en desarrollo backend con Node.js y Express, aplicando principios de arquitectura y escalabilidad. Profundicé en el desarrollo y documentación de APIs RESTful, gestión avanzada de datos con MongoDB y Mongoose, autenticación y autorización mediante JWT, bcrypt y manejo de sesiones, y persistencia de datos con diferentes estrategias de almacenamiento. También trabajé con WebSockets para funcionalidades en tiempo real, testing de endpoints, patrones de diseño y despliegue en entornos productivos. Proyecto final: API completa de e-commerce con sistema de usuarios, productos y carritos.",
+        "Recibí formación intensiva en desarrollo de software enfocada en calidad y arquitectura, aprendiendo Git avanzado, TypeScript, Test Driven Development, código limpio, arquitectura limpia y uso de Docker. Además, desarrollé habilidades blandas para trabajo en equipo, liderazgo y comunicación efectiva.",
+        icon:"https://forit.ar/images/icon-forit.svg"
     },
     {
       title: "Abr. 2024 - Jun. 2024",
       cardTitle: "FUNDAMENTOS DE PYTHON 1 - CISCO NETWORKING ACADEMY",
       cardDetailedText:
         "Aprendí los conceptos fundamentales de la programación informática y comience a desarrollar habilidades de codificación con el lenguaje de programación Python.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     },
     {
-      title: "Ago. 2025 - Nov 2025",
-      cardTitle:
-        "Programa de Profundización en Desarrollo de Software – Fundación Formar & Software IT",
+      title: "Oct. 2023 - Abr. 2024",
+      cardTitle: "PROGRAMACIÓN BACKEND - CODER HOUSE",
       cardDetailedText:
-        "Formación intensiva orientada a perfeccionar habilidades en desarrollo de software con foco en calidad, arquitectura y herramientas profesionales. A lo largo del programa profundicé en el uso de Git avanzado para entornos colaborativos, el desarrollo con TypeScript para un tipado más robusto, y la aplicación de Test Driven Development (TDD) junto con prácticas de código limpio y arquitectura limpia para lograr aplicaciones mantenibles y escalables. También trabajé en la aplicación práctica de TDD en entornos visuales y en el uso de Docker para la creación y despliegue de contenedores. Además, el programa incluyó un taller de Habilidades Blandas (HB) orientado al trabajo en equipo, liderazgo y comunicación efectiva, fortaleciendo así la preparación integral para proyectos en entornos productivos reales.",
+        "Recibí formación intensiva en backend con Node.js y Express, enfocándome en APIs RESTful, MongoDB, autenticación con JWT y bcrypt, sesiones, WebSockets para tiempo real, testing, patrones de diseño y despliegue. El proyecto final fue una API completa de e-commerce con usuarios, productos y carritos.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      title: "Jul. 2023 - Sep. 2023",
+      cardTitle: "REACT JS - CODER HOUSE",
+      cardDetailedText:
+        "En este curso aprendí a desarrollar aplicaciones web con React, aplicando buenas prácticas, manejo de componentes, enrutamiento, gestión global de estados y consumo de APIs, además de integrar Firebase para autenticación y base de datos en un proyecto final de e-commerce con persistencia en tiempo real.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+      title: "May. 2023 - Jul. 2023",
+      cardTitle: "JAVASCRIPT - CODER HOUSE",
+      cardDetailedText:
+        "En este curso dominé los fundamentos de JavaScript, integré librerías como jQuery y apliqué técnicas como AJAX para crear aplicaciones web interactivas y dinámicas, obteniendo una base sólida para trabajar con frameworks de JavaScript.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      title: "Feb. 2023 - Abr. 2023",
+      cardTitle: "DESARROLLO WEB - CODER HOUSE",
+      cardDetailedText:
+        "Este curso me enseñó a diseñar y desarrollar sitios web completos utilizando HTML, CSS, SASS y Bootstrap, gestionar versiones con GIT, optimizar SEO y desplegar en servidores, además de habilidades para interactuar con servicios web y gestionar clientes.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     },
   ];
+
   return (
-    <div>
-      <div className="box shadow-sm border-0 rounded-4">
-        <div className="card-body p-4">
-          <Chrono
-            items={items}
-            mode="HORIZONTAL"
-            cardHeight={150}
-            
-            theme={{
-              primary: "#4f46e5",
-              secondary: "#92B4F4",
-              cardBgColor: "#f9fafb",
-            }}
-          />
-        </div>
-      </div>
-    </div>
+    <Timeline position="alternate">
+      {items.map((item, index) => (
+        <TimelineItem key={index}>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align={index % 2 === 0 ? "right" : "left"}
+            variant="body2"
+            color="text.secondary"
+          >
+            {item.title}
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            {index !== 0 && <TimelineConnector sx={{ color: "#92B4F4" }} />}
+            <TimelineDot sx={{ color: "#4f46e5" }}>
+              <img
+                src={item.icon}
+                alt={item.cardTitle}
+                style={{ width: 20, height: 20 }}
+              />
+            </TimelineDot>
+            {index !== items.length - 1 && (
+              <TimelineConnector sx={{ color: "#92B4F4" }} />
+            )}
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Box
+              sx={{
+                p: 2,
+                borderRadius: 2,
+                boxShadow: 1,
+                bgcolor: "#92B4F4",
+              }}
+            >
+              <Typography
+                variant="h6"
+                component="span"
+                sx={{ color: "#4f46e5" }}
+              >
+                {item.cardTitle}
+              </Typography>
+              <Typography>{item.cardDetailedText}</Typography>
+            </Box>
+          </TimelineContent>
+        </TimelineItem>
+      ))}
+    </Timeline>
   );
 };
+
 export default Sec6;
- */

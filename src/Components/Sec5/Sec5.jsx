@@ -1,5 +1,5 @@
-import jwt from '../../assets/jwt.svg'
-import webSocket from '../../assets/websocket.svg'
+import jwt from "../../assets/jwt.svg";
+import webSocket from "../../assets/websocket.svg";
 import "./Sec5_Style.css";
 const Sec5 = () => {
   const skills = {
@@ -94,7 +94,7 @@ const Sec5 = () => {
       },
       {
         name: "TDD",
-        icon: "https://img.icons8.com/ios-filled/50/test-passed.png", // un ícono simple de test
+        icon: "https://img.icons8.com/ios-filled/50/test-passed.png",
       },
       {
         name: "Docker",
@@ -103,46 +103,48 @@ const Sec5 = () => {
     ],
   };
   return (
-    <div className='Sec5'>
-        <h1 className='text-light var-h1 text-center'>Skills</h1>
-      <div className="row justify-content-center gap-4">
-        <div className="col-10 col-md-4">
-          <div className="skills-block shadow skills-bg text-light">
-            <h4 className="text-center">Frontend</h4>
-            <div className="skills-list gap-2">
-              {skills.Frontend.map((skill, index) => (
-                <div className="skill-item" key={index}>
-                  <img
-                    src={skill.icon}
-                    alt={skill.name}
-                    className="skill-icon"
-                  />
-                  <p className="skill-name">{skill.name}</p>
-                </div>
-              ))}
+    <div className="Sec5">
+      <h1 className="text-light var-h1 text-center">Skills</h1>
+      <div className="d-flex flex-column justify-content-center align-items-center gap-4">
+        <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+          <div className="col-10 col-md-4">
+            <div className="skills-block shadow skills-bg text-light">
+              <h4 className="text-center">Frontend</h4>
+              <div className="skills-list gap-2">
+                {skills.Frontend.map((skill, index) => (
+                  <div className="skill-item" key={index}>
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="skill-icon"
+                    />
+                    <p className="skill-name">{skill.name}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="col-10 col-md-4">
+            <div className="skills-block shadow skills-bg text-light">
+              <h4 className="text-center">Backend</h4>
+              <div className="skills-list gap-2">
+                {skills.Backend.map((skill, index) => (
+                  <div className="skill-item" key={index}>
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="skill-icon"
+                    />
+                    <p className="skill-name">{skill.name}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="col-10 col-md-4">
-          <div className="skills-block shadow skills-bg text-light">
-            <h4 className="text-center">Backend</h4>
-            <div className="skills-list gap-2">
-              {skills.Backend.map((skill, index) => (
-                <div className="skill-item" key={index}>
-                  <img
-                    src={skill.icon}
-                    alt={skill.name}
-                    className="skill-icon"
-                  />
-                  <p className="skill-name">{skill.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="col-10 col-md-4">
+        <div className="col-12">
           <div className="skills-block text-light">
             <h5 className="text-center">En progreso</h5>
             <div className="skills-list gap-2">

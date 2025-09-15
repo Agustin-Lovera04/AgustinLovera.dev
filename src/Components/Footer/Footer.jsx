@@ -42,7 +42,7 @@ const Footer = () => {
             width="32px"
             height="32px"
             fill="currentColor"
-            class="bi bi-linkedin"
+            className="bi bi-linkedin"
             viewBox="0 0 16 16"
           >
             <path
@@ -57,7 +57,7 @@ const Footer = () => {
             width="32px"
             height="32px"
             fill="currentColor"
-            class="bi bi-WhatsApp"
+            className="bi bi-WhatsApp"
             viewBox="0 0 16 16"
           >
             <path
