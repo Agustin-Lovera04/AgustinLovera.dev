@@ -4,9 +4,19 @@ const Sec1 = () => {
   return (
     <div className="sec1 d-flex flex-md-row flex-column justify-content-center align-items-center">
       <div className="col-10 col-md-2 text-center text-md-end">
-        <img src={perfil} alt="" className="perfil_img" />
+        <img
+          src={perfil}
+          alt=""
+          className="perfil_img"
+          data-aos="fade-in"
+          data-aos-delay="300"
+        />
       </div>
-      <div className="col-10 col-md-8 text-center">
+      <div
+        className="col-10 col-md-8 text-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <h1 className="var-h1 text-light">
           Hola! Soy <span className="text-warning">Agustin Lovera</span>
         </h1>

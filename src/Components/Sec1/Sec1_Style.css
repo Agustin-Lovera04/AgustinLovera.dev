@@ -12,8 +12,8 @@
 
 .icon-click {
   position: absolute;
-  right: 12rem;
-  top: 24rem;
+  right: 14rem;
+  top: 8em;
 }
 
 @media (max-width:768px) {
@@ -25,6 +25,6 @@
 
 .icon-click {
   right: 2.5rem;
-  top: 36rem;
+  top: 16rem;
 }
 }

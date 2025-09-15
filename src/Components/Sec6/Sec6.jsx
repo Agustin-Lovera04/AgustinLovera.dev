@@ -16,7 +16,7 @@ const Sec6 = () => {
         "Programa de Profundización en Desarrollo de Software – Fundación Formar & Software IT",
       cardDetailedText:
         "Recibí formación intensiva en desarrollo de software enfocada en calidad y arquitectura, aprendiendo Git avanzado, TypeScript, Test Driven Development, código limpio, arquitectura limpia y uso de Docker. Además, desarrollé habilidades blandas para trabajo en equipo, liderazgo y comunicación efectiva.",
-        icon:"https://forit.ar/images/icon-forit.svg"
+      icon: "https://forit.ar/images/icon-forit.svg",
     },
     {
       title: "Abr. 2024 - Jun. 2024",
@@ -56,9 +56,13 @@ const Sec6 = () => {
   ];
 
   return (
-    <Timeline position="alternate">
+    <Timeline position="alternate" id="formacion">
       {items.map((item, index) => (
-        <TimelineItem key={index}>
+        <TimelineItem
+          key={index}
+          data-aos="fade-up"
+          data-aos-delay={index * 150}
+        >
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
             align={index % 2 === 0 ? "right" : "left"}
@@ -88,6 +92,8 @@ const Sec6 = () => {
                 boxShadow: 1,
                 bgcolor: "#92B4F4",
               }}
+              data-aos="fade-up"
+              data-aos-delay={index * 150 + 200}
             >
               <Typography
                 variant="h6"

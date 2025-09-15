@@ -25,8 +25,8 @@ const Sec7 = () => {
   };
 
   return (
-    <div className="Sec7 p-5">
-      <div className="d-flex justify-content-center">
+    <div className="Sec7 p-5 d-flex align-items-center justify-content-center" id="contacto">
+      <div className="col-8">
       {responseError && <div className="alert alert-danger">{responseError}</div>}
       {responseExit && <div className="alert alert-success">{responseExit}</div>}
       {!responseError && !responseExit && 

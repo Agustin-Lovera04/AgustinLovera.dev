@@ -6,10 +6,10 @@ import "./Sec3_Style.css";
 
 const Sec3 = () => {
   return (
-    <div className="sec3">
-      <h1 className="var-h1 offset-1">Proyectos recientes</h1>
+    <div className="sec3" id="proyectos">
+      <h1 className="var-h1 offset-1"data-aos="fade-in" data-aos-delay="200" >Proyectos recientes</h1>
       <div className="d-flex flex-column flex-md-row justify-content-center align-items-center flex-wrap gap-4">
-        <div className="card col-10 col-md-4">
+        <div className="card col-10 col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-offset="150">
           <div className="img_card_container HA_bg text-center align-content-center">
             <img src={HA_img} className="card-img-top shadow" alt="sitio web" />
           </div>
@@ -29,7 +29,7 @@ const Sec3 = () => {
             </a>
           </div>
         </div>
-        <div className="card col-10 col-md-4">
+        <div className="card col-10 col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-offset="150">
           <div className="img_card_container BZ_bg text-center align-content-center">
             <img
               src={BZ_img}
@@ -61,7 +61,7 @@ const Sec3 = () => {
             </a>
           </div>
         </div>
-        <div className="card col-10 col-md-4">
+        <div className="card col-10 col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-offset="150">
           <div className="img_card_container PN_bg text-center align-content-center">
             <img src={PN_img} className="card-img-top shadow" alt="..." />
           </div>
@@ -88,7 +88,7 @@ const Sec3 = () => {
             </a>
           </div>
         </div>
-        <div className="card col-10 col-md-4">
+        <div className="card col-10 col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-offset="150">
           <div className="img_card_container AM_bg text-center align-content-center">
             <img
               src={AM_img}

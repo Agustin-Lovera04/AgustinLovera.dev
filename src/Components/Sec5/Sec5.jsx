@@ -103,7 +103,7 @@ const Sec5 = () => {
     ],
   };
   return (
-    <div className="Sec5">
+    <div className="Sec5" id="habilidades">
       <h1 className="text-light var-h1 text-center">Skills</h1>
       <div className="d-flex flex-column justify-content-center align-items-center gap-4">
         <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">

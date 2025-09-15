@@ -21,9 +21,8 @@ const Navbar = () => {
         scrolled ? "scrolled" : ""
       }`}
     >
-
-        <img src={logo} alt="logo" className="navbar-brand" />
-         <button
+      <img src={logo} alt="logo" className="navbar-brand" />
+      <button
         className="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -35,7 +34,10 @@ const Navbar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
         <ul className="navbar-nav text-center">
           <li className="nav-item">
             <Link
@@ -85,11 +87,22 @@ const Navbar = () => {
               Formación
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="contacto"
+              className="nav-link"
+              smooth={true}
+              duration={500}
+              spy={true}
+              offset={-100}
+            >
+              Formación
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
   );
 };
-
 
 export default Navbar;

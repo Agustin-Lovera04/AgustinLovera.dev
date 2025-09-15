@@ -1,3 +1,6 @@
+#root,body{
+  overflow-x: hidden;
+}
 body{
   margin: 0;
   --color_var_1: #0A369D;

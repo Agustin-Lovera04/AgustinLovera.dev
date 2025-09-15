@@ -2,7 +2,7 @@ import graphElementSc2 from "../../assets/elemento_sc2.png";
 import './Sec2_Style.css'
 const Sec2 = () => {
   return (
-    <div className="d-flex flex-column-reverse flex-md-row justify-content-center align-items-center">
+    <div className="d-flex flex-column-reverse flex-md-row justify-content-center align-items-center" id="sobre-mi">
       <div className="col-10 col-md-5">
         <img src={graphElementSc2} alt="" className="graphElementSc2" />
       </div>
