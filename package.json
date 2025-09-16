@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Agustin-Lovera04.github.io/AgustinLovera.dev",
+  "homepage": "https://agustin-lovera04.github.io/AgustinLovera.dev/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
