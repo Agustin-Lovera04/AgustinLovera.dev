@@ -96,7 +96,7 @@ const Navbar = () => {
               spy={true}
               offset={-100}
             >
-              Formación
+              Contacto
             </Link>
           </li>
         </ul>
